@@ -1,0 +1,132 @@
+2022-07-26 10:43:49 - com.company.CardServiceApplication - [34mINFO [0;39m - Starting CardServiceApplication using Java 18.0.1.1 on ashirov with PID 12912 (C:\it\uzcard-microservices\card-service\target\classes started by gayra in C:\it\uzcard-microservices\uzcard-main)
+2022-07-26 10:43:49 - com.company.CardServiceApplication - [39mDEBUG[0;39m - Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-07-26 10:43:49 - com.company.CardServiceApplication - [34mINFO [0;39m - The following 1 profile is active: "dev"
+2022-07-26 10:43:50 - o.s.d.r.c.RepositoryConfigurationDelegate - [34mINFO [0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-26 10:43:50 - o.s.d.r.c.RepositoryConfigurationDelegate - [34mINFO [0;39m - Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
+2022-07-26 10:43:50 - o.s.cloud.context.scope.GenericScope - [34mINFO [0;39m - BeanFactory id=2a61f084-cacd-3d27-a7fd-949aacf25ab4
+2022-07-26 10:43:50 - o.s.b.w.e.tomcat.TomcatWebServer - [34mINFO [0;39m - Tomcat initialized with port(s): 9090 (http)
+2022-07-26 10:43:50 - o.a.catalina.core.StandardService - [34mINFO [0;39m - Starting service [Tomcat]
+2022-07-26 10:43:50 - o.a.catalina.core.StandardEngine - [34mINFO [0;39m - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-07-26 10:43:50 - o.a.c.c.C.[Tomcat].[localhost].[/] - [34mINFO [0;39m - Initializing Spring embedded WebApplicationContext
+2022-07-26 10:43:50 - o.s.b.w.s.c.ServletWebServerApplicationContext - [34mINFO [0;39m - Root WebApplicationContext: initialization completed in 1509 ms
+2022-07-26 10:43:51 - o.h.jpa.internal.util.LogHelper - [34mINFO [0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-26 10:43:51 - org.hibernate.Version - [34mINFO [0;39m - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-07-26 10:43:51 - o.h.annotations.common.Version - [34mINFO [0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-26 10:43:51 - com.zaxxer.hikari.HikariDataSource - [34mINFO [0;39m - HikariPool-1 - Starting...
+2022-07-26 10:43:51 - com.zaxxer.hikari.HikariDataSource - [34mINFO [0;39m - HikariPool-1 - Start completed.
+2022-07-26 10:43:51 - org.hibernate.dialect.Dialect - [34mINFO [0;39m - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-07-26 10:43:51 - org.hibernate.id.UUIDHexGenerator - [31mWARN [0;39m - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2022-07-26 10:43:52 - o.h.e.t.j.p.i.JtaPlatformInitiator - [34mINFO [0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-26 10:43:52 - o.s.o.j.LocalContainerEntityManagerFactoryBean - [34mINFO [0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26 10:43:52 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - [31mWARN [0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-26 10:43:52 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - [31mWARN [0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cardController' defined in file [C:\it\uzcard-microservices\card-service\target\classes\com\company\controller\CardController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cardService' defined in file [C:\it\uzcard-microservices\card-service\target\classes\com\company\service\CardService.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-07-26 10:43:52 - o.s.o.j.LocalContainerEntityManagerFactoryBean - [34mINFO [0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26 10:43:52 - com.zaxxer.hikari.HikariDataSource - [34mINFO [0;39m - HikariPool-1 - Shutdown initiated...
+2022-07-26 10:43:52 - com.zaxxer.hikari.HikariDataSource - [34mINFO [0;39m - HikariPool-1 - Shutdown completed.
+2022-07-26 10:43:52 - o.a.catalina.core.StandardService - [34mINFO [0;39m - Stopping service [Tomcat]
+2022-07-26 10:43:52 - o.s.b.a.l.ConditionEvaluationReportLoggingListener - [34mINFO [0;39m - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-26 10:43:52 - o.s.b.d.LoggingFailureAnalysisReporter - [1;31mERROR[0;39m - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in com.company.service.CardService required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
+
+2022-07-26 10:58:01 - com.company.CardServiceApplication - [34mINFO [0;39m - Starting CardServiceApplication using Java 18.0.1.1 on ashirov with PID 1436 (C:\it\uzcard-microservices\card-service\target\classes started by gayra in C:\it\uzcard-microservices\uzcard-main)
+2022-07-26 10:58:01 - com.company.CardServiceApplication - [39mDEBUG[0;39m - Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-07-26 10:58:01 - com.company.CardServiceApplication - [34mINFO [0;39m - The following 1 profile is active: "dev"
+2022-07-26 10:58:01 - o.s.d.r.c.RepositoryConfigurationDelegate - [34mINFO [0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-26 10:58:01 - o.s.d.r.c.RepositoryConfigurationDelegate - [34mINFO [0;39m - Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2022-07-26 10:58:01 - o.s.cloud.context.scope.GenericScope - [34mINFO [0;39m - BeanFactory id=2a61f084-cacd-3d27-a7fd-949aacf25ab4
+2022-07-26 10:58:02 - o.s.b.w.e.tomcat.TomcatWebServer - [34mINFO [0;39m - Tomcat initialized with port(s): 9090 (http)
+2022-07-26 10:58:02 - o.a.catalina.core.StandardService - [34mINFO [0;39m - Starting service [Tomcat]
+2022-07-26 10:58:02 - o.a.catalina.core.StandardEngine - [34mINFO [0;39m - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-07-26 10:58:02 - o.a.c.c.C.[Tomcat].[localhost].[/] - [34mINFO [0;39m - Initializing Spring embedded WebApplicationContext
+2022-07-26 10:58:02 - o.s.b.w.s.c.ServletWebServerApplicationContext - [34mINFO [0;39m - Root WebApplicationContext: initialization completed in 1328 ms
+2022-07-26 10:58:02 - o.h.jpa.internal.util.LogHelper - [34mINFO [0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-26 10:58:02 - org.hibernate.Version - [34mINFO [0;39m - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-07-26 10:58:02 - o.h.annotations.common.Version - [34mINFO [0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-26 10:58:02 - com.zaxxer.hikari.HikariDataSource - [34mINFO [0;39m - HikariPool-1 - Starting...
+2022-07-26 10:58:03 - com.zaxxer.hikari.HikariDataSource - [34mINFO [0;39m - HikariPool-1 - Start completed.
+2022-07-26 10:58:03 - org.hibernate.dialect.Dialect - [34mINFO [0;39m - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-07-26 10:58:03 - org.hibernate.id.UUIDHexGenerator - [31mWARN [0;39m - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2022-07-26 10:58:03 - o.h.e.t.j.p.i.JtaPlatformInitiator - [34mINFO [0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-26 10:58:03 - o.s.o.j.LocalContainerEntityManagerFactoryBean - [34mINFO [0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26 10:58:03 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - [31mWARN [0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-26 10:58:04 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - [31mWARN [0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cardController' defined in file [C:\it\uzcard-microservices\card-service\target\classes\com\company\controller\CardController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cardService' defined in file [C:\it\uzcard-microservices\card-service\target\classes\com\company\service\CardService.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-07-26 10:58:04 - o.s.o.j.LocalContainerEntityManagerFactoryBean - [34mINFO [0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26 10:58:04 - com.zaxxer.hikari.HikariDataSource - [34mINFO [0;39m - HikariPool-1 - Shutdown initiated...
+2022-07-26 10:58:04 - com.zaxxer.hikari.HikariDataSource - [34mINFO [0;39m - HikariPool-1 - Shutdown completed.
+2022-07-26 10:58:04 - o.a.catalina.core.StandardService - [34mINFO [0;39m - Stopping service [Tomcat]
+2022-07-26 10:58:04 - o.s.b.a.l.ConditionEvaluationReportLoggingListener - [34mINFO [0;39m - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-26 10:58:04 - o.s.b.d.LoggingFailureAnalysisReporter - [1;31mERROR[0;39m - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in com.company.service.CardService required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
+
+2022-07-26 12:10:50 - com.company.CardServiceApplication - [34mINFO [0;39m - Starting CardServiceApplication using Java 18.0.1.1 on ashirov with PID 6728 (C:\it\uzcard-microservices\card-service\target\classes started by gayra in C:\it\uzcard-microservices\uzcard-main)
+2022-07-26 12:10:50 - com.company.CardServiceApplication - [39mDEBUG[0;39m - Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-07-26 12:10:50 - com.company.CardServiceApplication - [34mINFO [0;39m - The following 1 profile is active: "dev"
+2022-07-26 12:10:50 - o.s.d.r.c.RepositoryConfigurationDelegate - [34mINFO [0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-26 12:10:50 - o.s.d.r.c.RepositoryConfigurationDelegate - [34mINFO [0;39m - Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
+2022-07-26 12:10:51 - o.s.cloud.context.scope.GenericScope - [34mINFO [0;39m - BeanFactory id=2a61f084-cacd-3d27-a7fd-949aacf25ab4
+2022-07-26 12:10:51 - o.s.b.w.e.tomcat.TomcatWebServer - [34mINFO [0;39m - Tomcat initialized with port(s): 9090 (http)
+2022-07-26 12:10:51 - o.a.catalina.core.StandardService - [34mINFO [0;39m - Starting service [Tomcat]
+2022-07-26 12:10:51 - o.a.catalina.core.StandardEngine - [34mINFO [0;39m - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-07-26 12:10:51 - o.a.c.c.C.[Tomcat].[localhost].[/] - [34mINFO [0;39m - Initializing Spring embedded WebApplicationContext
+2022-07-26 12:10:51 - o.s.b.w.s.c.ServletWebServerApplicationContext - [34mINFO [0;39m - Root WebApplicationContext: initialization completed in 1279 ms
+2022-07-26 12:10:51 - o.h.jpa.internal.util.LogHelper - [34mINFO [0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-26 12:10:51 - org.hibernate.Version - [34mINFO [0;39m - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-07-26 12:10:51 - o.h.annotations.common.Version - [34mINFO [0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-26 12:10:51 - com.zaxxer.hikari.HikariDataSource - [34mINFO [0;39m - HikariPool-1 - Starting...
+2022-07-26 12:10:52 - com.zaxxer.hikari.HikariDataSource - [34mINFO [0;39m - HikariPool-1 - Start completed.
+2022-07-26 12:10:52 - org.hibernate.dialect.Dialect - [34mINFO [0;39m - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-07-26 12:10:52 - org.hibernate.id.UUIDHexGenerator - [31mWARN [0;39m - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2022-07-26 12:10:52 - o.h.e.t.j.p.i.JtaPlatformInitiator - [34mINFO [0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-26 12:10:52 - o.s.o.j.LocalContainerEntityManagerFactoryBean - [34mINFO [0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26 12:10:52 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - [31mWARN [0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-26 12:10:53 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - [31mWARN [0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cardController' defined in file [C:\it\uzcard-microservices\card-service\target\classes\com\company\controller\CardController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cardService' defined in file [C:\it\uzcard-microservices\card-service\target\classes\com\company\service\CardService.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-07-26 12:10:53 - o.s.o.j.LocalContainerEntityManagerFactoryBean - [34mINFO [0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26 12:10:53 - com.zaxxer.hikari.HikariDataSource - [34mINFO [0;39m - HikariPool-1 - Shutdown initiated...
+2022-07-26 12:10:53 - com.zaxxer.hikari.HikariDataSource - [34mINFO [0;39m - HikariPool-1 - Shutdown completed.
+2022-07-26 12:10:53 - o.a.catalina.core.StandardService - [34mINFO [0;39m - Stopping service [Tomcat]
+2022-07-26 12:10:53 - o.s.b.a.l.ConditionEvaluationReportLoggingListener - [34mINFO [0;39m - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-26 12:10:53 - o.s.b.d.LoggingFailureAnalysisReporter - [1;31mERROR[0;39m - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in com.company.service.CardService required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
+
